@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[SHOP NAME] Barbershop | Book your chair</title>
+<meta name="description" content="Fades, beard work and clean cuts. Book your barber appointment online in under a minute.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<span id="top"></span>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><p>Open [DAYS] / [OPENING HOURS]<span class="topbar-addr"> | [YOUR ADDRESS], Cameroon</span></p></div>
+<header class="site-header">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open or close the menu">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html"><span class="logo-badge"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 7.5L20 18M8.5 16.5L20 6"/></svg></span><span>[SHOP NAME]</span></a>
+    <nav class="main-nav" aria-label="Main">
+      <ul class="menu"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li class="phone"><a href="tel:+237XXXXXXXXX"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>[+237 XXX XXX XXX]</a></li></ul>
+    </nav>
+    <a class="cta" href="#book">Book appointment</a>
+    <label class="burger" for="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></label>
+  </div>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-title"><div class="section"><div class="container hero-grid">
+  <div class="hero-copy">
+    <p class="live"><i></i>Open now - [CLOSING TIME]</p>
+    <p class="eyebrow">Barbershop - Cameroon</p>
+    <h1 id="hero-title">Walk in tired. Walk out <em>unstoppable.</em></h1>
+    <p class="hero-lead muted">Precision fades, clean beard work and a relaxed shop where everyone is welcome. Reserve your chair in under a minute.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="https://wa.me/237XXXXXXXXX" target="_blank" rel="noopener">Book on WhatsApp</a><a class="btn btn-ghost" href="services.html">View services</a></div>
+    <div class="rating"><span class="stars" aria-label="5 out of 5 stars"><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></span><span class="muted">[RATING] from [NUMBER] happy clients</span></div>
+  </div>
+  <form class="booking" action="#" method="post">
+  <!-- Visual form only (HTML + CSS). Connect to Formspree, a PHP handler or a WhatsApp link later. -->
+  <h3>Book your chair</h3>
+  <p class="sub">Free and quick. We confirm on WhatsApp.</p>
+  <fieldset><legend class="legend">1 - Choose a service</legend><div class="chips"><label class="chip"><input type="radio" name="service" value="fade" checked><span>Fade</span></label><label class="chip"><input type="radio" name="service" value="haircut"><span>Haircut</span></label><label class="chip"><input type="radio" name="service" value="beard"><span>Beard</span></label><label class="chip"><input type="radio" name="service" value="shave"><span>Shave</span></label><label class="chip"><input type="radio" name="service" value="kids"><span>Kids</span></label></div></fieldset>
+  <label class="field">2 - Pick a date<input type="date" name="date" required><span class="err">Choose a date.</span></label>
+  <fieldset><legend class="legend">3 - Choose a time</legend><div class="chips"><label class="chip"><input type="radio" name="time" value="morning" checked><span>Morning</span></label><label class="chip"><input type="radio" name="time" value="midday"><span>Midday</span></label><label class="chip"><input type="radio" name="time" value="afternoon"><span>Afternoon</span></label><label class="chip"><input type="radio" name="time" value="evening"><span>Evening</span></label></div></fieldset>
+  <div class="field-row">
+    <label class="field">Name<input type="text" name="name" autocomplete="name" placeholder="Full name" required><span class="err">Enter your name.</span></label>
+    <label class="field">WhatsApp<input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="[+237 XXX XXX XXX]" required><span class="err">Enter your WhatsApp number.</span></label>
+  </div>
+  <p class="summary" aria-live="polite"><strong>Your booking:</strong> <span class="sv-fade">Fade</span><span class="sv-haircut">Haircut</span><span class="sv-beard">Beard</span><span class="sv-shave">Shave</span><span class="sv-kids">Kids</span> at <span class="tm-morning">Morning</span><span class="tm-midday">Midday</span><span class="tm-afternoon">Afternoon</span><span class="tm-evening">Evening</span></p>
+  <button class="btn btn-primary" type="submit">Confirm my appointment</button>
+  <p class="note">No payment needed. We reply on WhatsApp within [REPLY TIME].</p>
+</form>
+</div></div></section>
+<section class="strip" aria-label="Why choose us"><div class="container"><ul><li><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12l5 5 9-10"/></svg><span>Walk-ins welcome</span></li><li><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="6" rx="1"/><path d="M6 13v6M9 13v6M12 13v6M15 13v6M18 13v6"/></svg><span>Clean tools every client</span></li><li><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Fast, on-time service</span></li><li><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><span>Fair, clear prices</span></li></ul></div></section>
+<section class="section bg-cream"><div class="container">
+  <div class="section-head"><p class="eyebrow">Our services</p><h2>Crafted for every <em>style</em></h2></div>
+  <div class="grid grid-3"><article class="card"><div class="icon-box"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 7.5L20 18M8.5 16.5L20 6"/></svg></div><h3>Fades and cuts</h3><p class="muted">Low, mid and high fades finished with a crisp line-up.</p></article><article class="card"><div class="icon-box"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 16l9-9 6 6-9 9z"/><path d="M13 7l3-3 4 4-3 3"/></svg></div><h3>Beard and shave</h3><p class="muted">Hot towel, razor shave and beard shaping.</p></article><article class="card"><div class="icon-box"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="6" rx="1"/><path d="M6 13v6M9 13v6M12 13v6M15 13v6M18 13v6"/></svg></div><h3>Kids and family</h3><p class="muted">Patient, quick cuts for the little ones.</p></article></div>
+  <a class="link-arrow" href="services.html">See all services <svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div></section>
+<section class="section bg-sand"><div class="container">
+  <div class="section-head"><p class="eyebrow">How it works</p><h2>Booking is <em>simple</em></h2></div>
+  <ol class="steps" style="list-style:none;margin:0;padding:0"><li><div class="num">1</div><h3>Choose your service</h3><p class="muted">Fade, beard, shave or kids' cut.</p></li><li><div class="num">2</div><h3>Pick your time</h3><p class="muted">Select a date and slot that suits you.</p></li><li><div class="num">3</div><h3>Show up and shine</h3><p class="muted">We confirm on WhatsApp. You leave sharp.</p></li></ol>
+</div></section>
+<section class="section bg-cream"><div class="container">
+  <div class="section-head"><p class="eyebrow">Gallery</p><h2>Fresh from <em>our chairs</em></h2></div>
+  <div class="gallery-grid"><a class="tile tall" href="gallery.html#photo-1" data-cat=""><span class="tile-bg g1"></span><svg class="icon tile-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 7.5L20 18M8.5 16.5L20 6"/></svg><span class="tile-label">[PHOTO: Fade]</span></a><a class="tile" href="gallery.html#photo-2" data-cat=""><span class="tile-bg g2"></span><svg class="icon tile-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 16l9-9 6 6-9 9z"/><path d="M13 7l3-3 4 4-3 3"/></svg><span class="tile-label">[PHOTO: Beard]</span></a><a class="tile" href="gallery.html#photo-3" data-cat=""><span class="tile-bg g3"></span><svg class="icon tile-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="6" rx="1"/><path d="M6 13v6M9 13v6M12 13v6M15 13v6M18 13v6"/></svg><span class="tile-label">[PHOTO: Design]</span></a><a class="tile" href="gallery.html#photo-5" data-cat=""><span class="tile-bg g1"></span><svg class="icon tile-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="6" rx="1"/><path d="M6 13v6M9 13v6M12 13v6M15 13v6M18 13v6"/></svg><span class="tile-label">[PHOTO: Shop]</span></a></div>
+  <a class="btn btn-primary" style="margin-top:28px" href="gallery.html">View full gallery</a>
+</div></section>
+<section class="section bg-green"><div class="container">
+  <div class="section-head"><p class="eyebrow">Reviews</p><h2>Loved by the <em>neighbourhood</em></h2></div>
+  <div class="grid grid-3 carousel" tabindex="0" aria-label="Customer reviews, swipe to see more"><article class="card card--dark"><span class="stars" aria-label="5 out of 5 stars"><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></span><p>[CLIENT REVIEW: a short quote from a happy customer.]</p><p class="muted">[CLIENT NAME]</p></article><article class="card card--dark"><span class="stars" aria-label="5 out of 5 stars"><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></span><p>[CLIENT REVIEW: a short quote from a happy customer.]</p><p class="muted">[CLIENT NAME]</p></article><article class="card card--dark"><span class="stars" aria-label="5 out of 5 stars"><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><svg class="icon fill" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></span><p>[CLIENT REVIEW: a short quote from a happy customer.]</p><p class="muted">[CLIENT NAME]</p></article></div>
+</div></section>
+<section class="section bg-sand faq"><div class="container split split-top">
+  <div><p class="eyebrow">FAQ</p><h2>Good to <em>know</em></h2><p class="muted lead">Quick answers before you book.</p></div>
+  <div><details><summary>Do I need an appointment?</summary><p>Walk-ins are welcome, but booking guarantees your time.</p></details><details><summary>How do I pay?</summary><p>[PAYMENT METHODS, e.g. cash, Mobile Money]</p></details><details><summary>Do you cut kids' hair?</summary><p>Yes. [AGE RANGE] welcome, with patient, quick cuts.</p></details><details><summary>Can I bring a style photo?</summary><p>Yes. Show us the look and we will match it.</p></details></div>
+</div></section>
+<section class="section bg-green" id="book" aria-labelledby="book-title">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">Book now</p>
+      <h2 id="book-title">Your next cut is <em>one tap away</em></h2>
+      <p class="muted lead">Choose your service and time. We keep your chair ready.</p>
+      <ul class="checks"><li><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12l5 5 9-10"/></svg>Takes less than a minute</li><li><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12l5 5 9-10"/></svg>Confirmation on WhatsApp</li><li><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12l5 5 9-10"/></svg>Walk-ins welcome too</li></ul>
+    </div>
+    <form class="booking" action="#" method="post">
+  <!-- Visual form only (HTML + CSS). Connect to Formspree, a PHP handler or a WhatsApp link later. -->
+  <h3>Book your chair</h3>
+  <p class="sub">Free and quick. We confirm on WhatsApp.</p>
+  <fieldset><legend class="legend">1 - Choose a service</legend><div class="chips"><label class="chip"><input type="radio" name="service" value="fade" checked><span>Fade</span></label><label class="chip"><input type="radio" name="service" value="haircut"><span>Haircut</span></label><label class="chip"><input type="radio" name="service" value="beard"><span>Beard</span></label><label class="chip"><input type="radio" name="service" value="shave"><span>Shave</span></label><label class="chip"><input type="radio" name="service" value="kids"><span>Kids</span></label></div></fieldset>
+  <label class="field">2 - Pick a date<input type="date" name="date" required><span class="err">Choose a date.</span></label>
+  <fieldset><legend class="legend">3 - Choose a time</legend><div class="chips"><label class="chip"><input type="radio" name="time" value="morning" checked><span>Morning</span></label><label class="chip"><input type="radio" name="time" value="midday"><span>Midday</span></label><label class="chip"><input type="radio" name="time" value="afternoon"><span>Afternoon</span></label><label class="chip"><input type="radio" name="time" value="evening"><span>Evening</span></label></div></fieldset>
+  <div class="field-row">
+    <label class="field">Name<input type="text" name="name" autocomplete="name" placeholder="Full name" required><span class="err">Enter your name.</span></label>
+    <label class="field">WhatsApp<input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="[+237 XXX XXX XXX]" required><span class="err">Enter your WhatsApp number.</span></label>
+  </div>
+  <p class="summary" aria-live="polite"><strong>Your booking:</strong> <span class="sv-fade">Fade</span><span class="sv-haircut">Haircut</span><span class="sv-beard">Beard</span><span class="sv-shave">Shave</span><span class="sv-kids">Kids</span> at <span class="tm-morning">Morning</span><span class="tm-midday">Midday</span><span class="tm-afternoon">Afternoon</span><span class="tm-evening">Evening</span></p>
+  <button class="btn btn-primary" type="submit">Confirm my appointment</button>
+  <p class="note">No payment needed. We reply on WhatsApp within [REPLY TIME].</p>
+</form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><a class="logo" href="index.html"><span class="logo-badge"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 7.5L20 18M8.5 16.5L20 6"/></svg></span><span>[SHOP NAME]</span></a><p class="tagline">[YOUR TAGLINE] Fades, beards and clean cuts in a friendly shop.</p><div class="social"><a href="#" aria-label="WhatsApp"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.8A8.5 8.5 0 1112 20.5a8.5 8.5 0 01-4-1z"/></svg></a><a href="#" aria-label="Facebook"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 8h2V5h-2a3 3 0 00-3 3v2H9v3h2v6h3v-6h2l1-3h-3V8z"/></svg></a><a href="#" aria-label="Instagram"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></a></div></div>
+    <div class="footer-links"><h3>Explore</h3><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="gallery.html">Gallery</a><br><a href="about.html">About</a><br><a href="contact.html">Contact</a><br></div>
+    <div class="footer-links"><h3>Services</h3><a href="services.html">Fades and cuts</a><br><a href="services.html">Beard and shave</a><br><a href="services.html">Kids' cuts</a><br><a href="services.html">Hair designs</a><br></div>
+    <div><h3>Opening hours</h3><ul class="hours"><li><span>Mon - Fri</span><span>[HOURS]</span></li><li><span>Saturday</span><span>[HOURS]</span></li><li><span>Sunday</span><span>[HOURS]</span></li></ul><p class="address">[YOUR ADDRESS], Cameroon<br><a href="tel:+237XXXXXXXXX">[+237 XXX XXX XXX]</a></p></div>
+  </div>
+  <p class="legal">&copy; [SHOP NAME] Barbershop - Privacy - Terms</p>
+</footer>
+<div class="progress" aria-hidden="true"></div>
+<nav class="action-bar" aria-label="Quick actions">
+  <a href="tel:+237XXXXXXXXX"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>Call</a>
+  <a href="https://wa.me/237XXXXXXXXX" target="_blank" rel="noopener"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.8A8.5 8.5 0 1112 20.5a8.5 8.5 0 01-4-1z"/></svg>WhatsApp</a>
+  <a class="primary" href="#book"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Book now</a>
+</nav>
+<a class="fab-wa" href="https://wa.me/237XXXXXXXXX" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 21l1.6-4.8A8.5 8.5 0 1112 20.5a8.5 8.5 0 01-4-1z"/></svg><span>Chat with us</span></a>
+<a class="to-top" href="#top" aria-label="Back to top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+</body>
+</html>
